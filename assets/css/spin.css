@@ -4,8 +4,8 @@
     flex-wrap: wrap;
 }
 
-.container {
-    margin: 20px auto;
+.container-roda {
+    /* margin: 20px auto; */
     cursor: pointer;
     position: relative;
 }
