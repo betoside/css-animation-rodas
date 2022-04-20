@@ -1,0 +1,46 @@
+.geral-1 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+    color: rgb(188, 39, 39);
+}
+.container {
+    max-width: 1000px;
+    padding: 20px 50px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+}
+
+.setas1 {
+    width: 100px;
+}
+
+:root {
+    --cor1: #f26522;
+    --cor2: #be1e2d;
+    --cor3: #2e3192;
+}
+
+#seta-A { fill: var(--cor1); opacity: 0.7; }
+#seta-B { fill: var(--cor2); opacity: 0.7; }
+#seta-C { fill: var(--cor3); opacity: 0.7; }
+
+#seta-A,
+#seta-B,
+#seta-C { 
+    cursor: pointer; 
+    transition: all 1s ease;
+}
+#seta-C { 
+    transform: translateX(-100%);
+}
+
+.setas1:hover #seta-A { transform: translateX(40%); }
+.setas1:hover #seta-B { transform: translateX(60%); opacity: 0; }
+.setas1:hover #seta-C { transform: translateX(-40%); }

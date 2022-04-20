@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Duotone CSS Variables</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <a href="spin.html">rodas de skate</a> |
+    <a href="anima2.html">animacao tela mobile botao com raio</a>
+
+    <br>
+
+    <div class="geral-1">
+
+        <div class="container">
+            <a href="https://www.youtube.com/watch?v=UTHgr6NLeEw" target="_blank">
+                <h1>Make Awesome SVG Animations with CSS // 7 Useful Techniques</h1>
+            </a>
+            <p>
+                <a href="https://www.youtube.com/watch?v=UTHgr6NLeEw" target="_blank">
+                    youtube tutorial
+                    <i class="fa fa-light fa-up-right-from-square"></i>
+                </a>
+            </p>
+        </div>
+        <div class="container">
+            <div>
+                <svg class="setas1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132.57 136.71">
+                    <path id="seta-A" d="M0,0,64.82,64.82a5,5,0,0,1,0,7.07L0,136.71" />
+                    <path id="seta-B" d="M33.14,0,98,64.82a5,5,0,0,1,0,7.07L33.14,136.71" />
+                    <path id="seta-C" d="M66.28,0,131.1,64.82a5,5,0,0,1,0,7.07L66.28,136.71" />
+                  </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const setas = document.querySelector('.setas1');
+        setas.onclick = (e) => {
+            const cores = ['red','blue','green','orange','pink','purple'];
+            const rando = () => cores[Math.floor(Math.random() * cores.length)];
+            document.documentElement.style.cssText = `
+                --cor1: ${rando()};
+                --cor2: ${rando()};
+                --cor3: ${rando()};
+            `;
+        }
+    </script>
+    
+</body>
+</html>

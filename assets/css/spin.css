@@ -1,0 +1,77 @@
+.geral-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin: 20px auto;
+    cursor: pointer;
+    position: relative;
+}
+.anarquia {
+    width: 238px;
+    height: 238px;
+}
+.anarquia img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* animation: girar 10s linear infinite; */
+    animation: girar 1s forwards;
+    /* animation-play-state: paused; */
+}
+.anarquia:hover img {
+    animation: girar 2s infinite;
+    /* animation-play-state: running; */
+    /* animation:normal; */
+}
+@keyframes girar {
+    /* 100% { transform: rotate(1turn); } */
+    to {
+        transform: rotate(2turn)
+    }
+}
+
+
+.narina {
+    width: 273px;
+    height: 273px;
+}
+.narina img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: girar 10s linear infinite;
+    animation-play-state: paused;
+}
+.narina:hover img {
+    animation-play-state: running;
+}
+
+.hosoi {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.hosoi .roda {
+    position: absolute;
+    top: 36%;
+    left: 36%;
+    animation: girar 10s linear infinite;
+    animation-play-state: paused;
+}
+.hosoi:hover .roda {
+    animation-play-state: running;
+}
+
+
+.icon-logo-star[data-spin-me=true] {
+    animation: spinMe 1s forwards;
+}
+@keyframes spinMe {
+    to {
+        transform: rotate(2turn)
+    }
+}
+

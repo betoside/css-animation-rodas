@@ -1,0 +1,138 @@
+.geral-2 {
+    background: black;
+}
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+}
+.botao-raio,
+.cls-1 {
+    fill: lime;
+    fill-rule: evenodd;
+}
+.ico-raio {
+    width: 45px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px 20px 0;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #eee;
+}
+.menu {
+    width: 36px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.menu div {
+    height: 5px;
+    background: #eee;
+}
+.boxes {
+    display: flex;
+    margin-bottom: 20px;
+}
+.boxes div {
+    flex: 1;
+    height: 50px;
+    background-color: #eee;
+    margin: 0 10px;
+}
+.boxes div:first-child {
+    margin-left: 0;
+}
+.boxes div:last-child {
+    margin-right: 0;
+}
+
+    .boxes2 { 
+        flex-wrap: wrap; 
+    }
+
+    .boxes2 div:nth-child(1) {
+        flex: 3;
+    }
+    .boxes2 div:nth-child(2) {
+        flex: 2;
+    }
+    .boxes2 div:nth-child(3) {
+        flex: 1;
+    }
+
+.botao-raio {
+    fill: lime;
+    fill-rule: evenodd;
+    width: 195px;
+    height: 50px;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 35px;
+}
+
+.destaques {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.destaq {
+    position: relative;
+    min-width: 44%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+.destaq img {
+    width: 100%;
+}
+.ico-raio {
+    position: absolute;
+    top: -15px;
+    right: -7px;
+}
+
+
+#esqueleto {
+    animation: fadeInUp 1s;
+
+}
+@keyframes fadeInUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to {
+        opacity: 1s;
+        transform: translateY(0);
+    }
+
+}
+
+.box-botao-raio,
+.ico-raio {
+    opacity: 0;
+    animation: dropIn 5s ease forwards infinite;
+    animation-delay: calc(var(--order) * 200ms);
+}
+@keyframes dropIn {
+    20% {
+        opacity: 0;
+        transform: translateY(-40%);
+    }
+    30%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
