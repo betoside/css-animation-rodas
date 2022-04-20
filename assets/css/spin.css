@@ -17,6 +17,8 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 238px;
+    height: 238px;
     /* animation: girar 10s linear infinite; */
     animation: girar 1s forwards;
     /* animation-play-state: paused; */
@@ -42,6 +44,8 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 273px;
+    height: 273px;
     animation: girar 10s linear infinite;
     animation-play-state: paused;
 }
